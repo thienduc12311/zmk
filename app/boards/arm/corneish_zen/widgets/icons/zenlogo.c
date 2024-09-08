@@ -1,11 +1,3 @@
-/*
- *
- * Copyright (c) 2021 Darryl deHaan
- * SPDX-License-Identifier: MIT
- *
- 
- */
-
 #include <lvgl.h>
 
 #ifndef LV_ATTRIBUTE_MEM_ALIGN
@@ -16,9 +8,7 @@
 #define LV_ATTRIBUTE_IMG_ZENLOGO
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ZENLOGO uint8_t
-    zenlogo_map[] = {
-       {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ZENLOGO uint8_t zenlogo_map[] = {
   0x00, 0x00, 0x00, 0x07, 	/*Color of index 0*/
   0x00, 0x00, 0x00, 0xf8, 	/*Color of index 1*/
 
@@ -65,11 +55,11 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ZENLOGO u
 };
 
 const lv_img_dsc_t zenlogo = {
-    .header.always_zero = 0,
-    .header.reserved = 0,
-    .header.w = 40,
-    .header.h = 40,
-    .data_size = 208,
-    .header.cf = LV_IMG_CF_INDEXED_1BIT,
-    .data = zenlogo_map,
+  .header.cf = LV_IMG_CF_INDEXED_1BIT,
+  .header.always_zero = 0,
+  .header.reserved = 0,
+  .header.w = 40,
+  .header.h = 40,
+  .data_size = 208,
+  .data = zenlogo_map,
 };
